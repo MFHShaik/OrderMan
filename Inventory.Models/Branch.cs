@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace Inventory.Models
 {
-    internal class Branch
+    public class Branch
     {
+        public int BranchId { get; set; }
+        [Required]
+        public string BranchName { get; set; }
+        public string Description { get; set; }
+        [Display (Name = "Currency")]
+        public int CurrencyId { get; set; }
+        public string Address { get; set; } 
+        public string City { get; set; }
+        public string State { get; set; }
+        public string ZipCode { get; set; }
+        public string Phone { get; set; }
+        public string Email { get; set; }
+
+
     }
 }

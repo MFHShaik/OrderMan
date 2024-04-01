@@ -1,17 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Inventory.Models
 {
-    public class BillType
+    public class ProductType
     {
-        public int BillTypeId { get; set; }
-        [Required]
-        public string BillTypeName { get; set; }
+        public int ProductTypeId { get; set; }
+        public string ProductTypeName { get; set; }
         public string Description { get; set; }
     }
 }

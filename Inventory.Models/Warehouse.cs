@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace Inventory.Models
 {
-    internal class Warehouse
+    public class Warehouse
     {
+        public int WarehouseId { get; set; }
+
+        public string WarehouseName { get; set; }
+
+        public string Description { get;}
+        [Display(Name = "Branch")]
+
+        public int BranchId {  get; set; }
+        
+
     }
 }

@@ -10,9 +10,9 @@ namespace Inventory.Models
     internal class Bill
     {
         public int BillId { get; set; }
-        [Display(Name ="Bill / Invoice Number")]
+        [Display(Name = "Bill / Invoice Number")]
         public string BillName { get; set; }
-        [Display(Name ="GRN")]
+        [Display(Name = "GRN")]
         public int GoodsReceivedNoteID { get; set; }
         [Display(Name = "Vendor Delivery Order")]
         public string VendorDoNumber { get; set; }
@@ -23,6 +23,7 @@ namespace Inventory.Models
         [Display(Name = "Bill Due Date")]
         public DateTimeOffset BillDueDate { get; set; }
         [Display(Name = "Bill Type")]
+
         public int BillTypeId { get; set; }
     }
 }
